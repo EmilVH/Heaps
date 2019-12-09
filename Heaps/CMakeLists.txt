@@ -1,0 +1,10 @@
+cmake_minimum_required(VERSION 3.14)
+project(Heaps)
+
+set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_EXTENSIONS ON)
+add_executable(Heaps main.cpp BinomialHeap.h IHeap.h LeftistHeap.h SkewHeap.h TestHeap.h Tester.h)
+add_subdirectory(Google_tests)
+include_directories(Google_tests/googletest/include)
+include_directories(Google_tests/googlemock/include)
+target_link_libraries(Heaps gtest gtest_main)
