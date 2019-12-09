@@ -28,7 +28,7 @@ void tester(std::vector<IHeap *> tested, std::vector<IHeap *> standard, int key,
             standard[y]->Insert(value);
         }
         if (x % 4 == 1) {
-            if(standard[y]->size()>0){
+            if (standard[y]->size() > 0) {
                 ASSERT_EQ(tested[y]->GetMin(), standard[y]->GetMin());
             }
         }
@@ -60,7 +60,41 @@ void create_test_vector(std::vector<IHeap *> &a) {
     }
 }
 
-class TestLeftistHeap : public ::testing::Test {
+class TesterHeap : public ::testing::Test {
+protected:
+    IHeap *getHeap(int x) {
+        IHeap *ans;
+        if (x == 1) {
+            ans = new BinomialHeap;
+        }
+        if (x == 2) {
+            ans = new SkewHeap;
+        }
+        if (x == 3) {
+            ans = new LeftistHeap;
+        }
+        return ans;
+    }
+
+    virtual void SetUp(int x) {
+        all.resize(5000);
+        for (int i = 0; i < 5000; i++) {
+            all[i] = getHeap(x);
+        }
+        create_test_vector(standard);
+    }
+
+    virtual void TearDown() {
+        delete_vector(all);
+        delete_vector(standard);
+
+    }
+
+    std::vector<IHeap *> all;
+    std::vector<IHeap *> standard;
+};
+
+/*class TestLeftistHeap : public ::testing::Test {
 protected:
     void SetUp() {
         all.resize(5000);
@@ -119,18 +153,23 @@ protected:
     std::vector<IHeap *> all;
     std::vector<IHeap *> standard;
 };
-
-TEST_F (TestBionomialHeap,
+*/
+TEST_F (TesterHeap,
         BinomialHeap) {
+    SetUp(1);
     tester(all, standard, 345, 1000000);
 
 }
-TEST_F (TestSkewHeap,
+
+TEST_F (TesterHeap,
         SkewHeap) {
+    SetUp(2);
     tester(all, standard, 345, 1000000);
 }
-TEST_F (TestLeftistHeap,
+
+TEST_F (TesterHeap,
         LeftistHeap) {
+    SetUp(3);
     tester(all, standard, 345, 1000000);
 }
 

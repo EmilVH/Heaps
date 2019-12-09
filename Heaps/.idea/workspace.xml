@@ -2,11 +2,11 @@
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
     <generated>
-      <config projectName="Heaps" targetName="gtest_main" />
-      <config projectName="Heaps" targetName="Heaps" />
-      <config projectName="Heaps" targetName="gtest" />
-      <config projectName="Heaps" targetName="gmock_main" />
       <config projectName="Heaps" targetName="gmock" />
+      <config projectName="Heaps" targetName="gtest_main" />
+      <config projectName="Heaps" targetName="gmock_main" />
+      <config projectName="Heaps" targetName="gtest" />
+      <config projectName="Heaps" targetName="Heaps" />
     </generated>
   </component>
   <component name="CMakeSettings">
@@ -15,7 +15,17 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="95002d62-991f-4592-978c-76f84c1bddd0" name="Default Changelist" comment="" />
+    <list default="true" id="95002d62-991f-4592-978c-76f84c1bddd0" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester.h" beforeDir="false" afterPath="$PROJECT_DIR$/Tester.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Heaps.dir/main.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Heaps.dir/main.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Heaps.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Heaps.dir/objects.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Heaps.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Heaps.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Test/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Test/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Test/cmake-build-debug/CMakeFiles/Test.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/../Test/cmake-build-debug/CMakeFiles/Test.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Test/cmake-build-debug/Test.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../Test/cmake-build-debug/Test.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Test/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../Test/main.cpp" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,13 +45,11 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="ProjectId" id="1UhxBB9QO1gOrhYnSY5z4KGWFEk" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
-    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="cf.advertisement.text.has.clang-format" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/CMakeLists.txt" />
     <property name="settings.editor.selected.configurable" value="pyconsole" />
   </component>
   <component name="RecentsManager">
@@ -62,7 +70,7 @@
     </option>
   </component>
   <component name="RunManager" selected="CMake Application.Heaps">
-    <configuration name="kek.lol" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Heaps" TARGET_NAME="Heaps" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Heaps" RUN_TARGET_NAME="Heaps" TEST_CLASS="kek" TEST_METHOD="lol" TEST_MODE="SUITE_TEST">
+    <configuration name="TestBionomialHeap.BinomialHeap" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Heaps" TARGET_NAME="Heaps" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Heaps" RUN_TARGET_NAME="Heaps" TEST_CLASS="TestBionomialHeap" TEST_METHOD="BinomialHeap" TEST_MODE="SUITE_TEST">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
         <option name="BeforeTestRunTask" enabled="true" />
@@ -99,11 +107,11 @@
       <item itemvalue="CMake Application.gmock_main" />
       <item itemvalue="CMake Application.gtest" />
       <item itemvalue="CMake Application.gtest_main" />
-      <item itemvalue="Google Test.kek.lol" />
+      <item itemvalue="Google Test.TestBionomialHeap.BinomialHeap" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Google Test.kek.lol" />
+        <item itemvalue="Google Test.TestBionomialHeap.BinomialHeap" />
       </list>
     </recent_temporary>
   </component>
@@ -118,7 +126,8 @@
       <option name="presentableId" value="Default" />
       <updated>1575822489523</updated>
       <workItem from="1575822490687" duration="5991000" />
-      <workItem from="1575835171956" duration="8843000" />
+      <workItem from="1575835171956" duration="8530000" />
+      <workItem from="1575874420304" duration="2789000" />
     </task>
     <task id="LOCAL-00001" summary="Initial">
       <created>1575834658239</created>
@@ -135,11 +144,11 @@
       <updated>1575842740161</updated>
     </task>
     <task id="LOCAL-00003" summary="Added Testing">
-      <created>1575872752283</created>
+      <created>1575874604498</created>
       <option name="number" value="00003" />
       <option name="presentableId" value="LOCAL-00003" />
       <option name="project" value="LOCAL" />
-      <updated>1575872752283</updated>
+      <updated>1575874604498</updated>
     </task>
     <option name="localTasksCounter" value="4" />
     <servers />
@@ -163,7 +172,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Initial" />
     <MESSAGE value="Added Testing" />
     <option name="LAST_COMMIT_MESSAGE" value="Added Testing" />
