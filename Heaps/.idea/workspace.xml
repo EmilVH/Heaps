@@ -16,7 +16,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="95002d62-991f-4592-978c-76f84c1bddd0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IHeap.h" beforeDir="false" afterPath="$PROJECT_DIR$/IHeap.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LeftistHeap.h" beforeDir="false" afterPath="$PROJECT_DIR$/LeftistHeap.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SkewHeap.h" beforeDir="false" afterPath="$PROJECT_DIR$/SkewHeap.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Heaps.dir/main.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Heaps.dir/main.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Heaps.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Heaps.dir/objects.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Heaps.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Heaps.exe" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -116,6 +121,7 @@
       <workItem from="1575835171956" duration="8530000" />
       <workItem from="1575874420304" duration="6312000" />
       <workItem from="1575891557036" duration="761000" />
+      <workItem from="1575892401362" duration="578000" />
     </task>
     <task id="LOCAL-00001" summary="Initial">
       <created>1575834658239</created>
@@ -152,7 +158,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575892225579</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Added gitignore">
+      <created>1575892487956</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1575892487956</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

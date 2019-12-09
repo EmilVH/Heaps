@@ -14,7 +14,7 @@ protected:
     public:
         Vertex_ *r = nullptr;
         Vertex_ *l = nullptr;
-        int key = -1000;
+        int key;
         int rank = 1;
     };
 
