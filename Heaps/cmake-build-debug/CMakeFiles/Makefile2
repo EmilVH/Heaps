@@ -43,10 +43,10 @@ RM = "C:\Program Files\JetBrains\CLion 2019.2.1\bin\cmake\win\bin\cmake.exe" -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\vahna\Documents\MyProjects\Homework\Homework\Heaps
+CMAKE_SOURCE_DIR = C:\Users\vahna\Desktop\Heaps\Heaps\Heaps
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\vahna\Documents\MyProjects\Homework\Homework\Heaps\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\vahna\Desktop\Heaps\Heaps\Heaps\cmake-build-debug
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -76,14 +76,14 @@ CMakeFiles/Heaps.dir/all: Google_tests/googletest/CMakeFiles/gtest_main.dir/all
 CMakeFiles/Heaps.dir/all: Google_tests/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) -f CMakeFiles\Heaps.dir\build.make CMakeFiles/Heaps.dir/depend
 	$(MAKE) -f CMakeFiles\Heaps.dir\build.make CMakeFiles/Heaps.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\vahna\Documents\MyProjects\Homework\Homework\Heaps\cmake-build-debug\CMakeFiles --progress-num=1,2 "Built target Heaps"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\vahna\Desktop\Heaps\Heaps\Heaps\cmake-build-debug\CMakeFiles --progress-num=1,2 "Built target Heaps"
 .PHONY : CMakeFiles/Heaps.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Heaps.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\vahna\Documents\MyProjects\Homework\Homework\Heaps\cmake-build-debug\CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\vahna\Desktop\Heaps\Heaps\Heaps\cmake-build-debug\CMakeFiles 6
 	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/Heaps.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\vahna\Documents\MyProjects\Homework\Homework\Heaps\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\vahna\Desktop\Heaps\Heaps\Heaps\cmake-build-debug\CMakeFiles 0
 .PHONY : CMakeFiles/Heaps.dir/rule
 
 # Convenience name for target.
@@ -144,14 +144,14 @@ Google_tests/googlemock/CMakeFiles/gmock_main.dir/all: Google_tests/googlemock/C
 Google_tests/googlemock/CMakeFiles/gmock_main.dir/all: Google_tests/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) -f Google_tests\googlemock\CMakeFiles\gmock_main.dir\build.make Google_tests/googlemock/CMakeFiles/gmock_main.dir/depend
 	$(MAKE) -f Google_tests\googlemock\CMakeFiles\gmock_main.dir\build.make Google_tests/googlemock/CMakeFiles/gmock_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\vahna\Documents\MyProjects\Homework\Homework\Heaps\cmake-build-debug\CMakeFiles --progress-num=5,6 "Built target gmock_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\vahna\Desktop\Heaps\Heaps\Heaps\cmake-build-debug\CMakeFiles --progress-num=5,6 "Built target gmock_main"
 .PHONY : Google_tests/googlemock/CMakeFiles/gmock_main.dir/all
 
 # Build rule for subdir invocation for target.
 Google_tests/googlemock/CMakeFiles/gmock_main.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\vahna\Documents\MyProjects\Homework\Homework\Heaps\cmake-build-debug\CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\vahna\Desktop\Heaps\Heaps\Heaps\cmake-build-debug\CMakeFiles 6
 	$(MAKE) -f CMakeFiles\Makefile2 Google_tests/googlemock/CMakeFiles/gmock_main.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\vahna\Documents\MyProjects\Homework\Homework\Heaps\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\vahna\Desktop\Heaps\Heaps\Heaps\cmake-build-debug\CMakeFiles 0
 .PHONY : Google_tests/googlemock/CMakeFiles/gmock_main.dir/rule
 
 # Convenience name for target.
@@ -171,14 +171,14 @@ Google_tests/googlemock/CMakeFiles/gmock_main.dir/clean:
 Google_tests/googlemock/CMakeFiles/gmock.dir/all: Google_tests/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) -f Google_tests\googlemock\CMakeFiles\gmock.dir\build.make Google_tests/googlemock/CMakeFiles/gmock.dir/depend
 	$(MAKE) -f Google_tests\googlemock\CMakeFiles\gmock.dir\build.make Google_tests/googlemock/CMakeFiles/gmock.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\vahna\Documents\MyProjects\Homework\Homework\Heaps\cmake-build-debug\CMakeFiles --progress-num=3,4 "Built target gmock"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\vahna\Desktop\Heaps\Heaps\Heaps\cmake-build-debug\CMakeFiles --progress-num=3,4 "Built target gmock"
 .PHONY : Google_tests/googlemock/CMakeFiles/gmock.dir/all
 
 # Build rule for subdir invocation for target.
 Google_tests/googlemock/CMakeFiles/gmock.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\vahna\Documents\MyProjects\Homework\Homework\Heaps\cmake-build-debug\CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\vahna\Desktop\Heaps\Heaps\Heaps\cmake-build-debug\CMakeFiles 4
 	$(MAKE) -f CMakeFiles\Makefile2 Google_tests/googlemock/CMakeFiles/gmock.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\vahna\Documents\MyProjects\Homework\Homework\Heaps\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\vahna\Desktop\Heaps\Heaps\Heaps\cmake-build-debug\CMakeFiles 0
 .PHONY : Google_tests/googlemock/CMakeFiles/gmock.dir/rule
 
 # Convenience name for target.
@@ -218,14 +218,14 @@ Google_tests/googletest/preinstall:
 Google_tests/googletest/CMakeFiles/gtest.dir/all:
 	$(MAKE) -f Google_tests\googletest\CMakeFiles\gtest.dir\build.make Google_tests/googletest/CMakeFiles/gtest.dir/depend
 	$(MAKE) -f Google_tests\googletest\CMakeFiles\gtest.dir\build.make Google_tests/googletest/CMakeFiles/gtest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\vahna\Documents\MyProjects\Homework\Homework\Heaps\cmake-build-debug\CMakeFiles --progress-num=7,8 "Built target gtest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\vahna\Desktop\Heaps\Heaps\Heaps\cmake-build-debug\CMakeFiles --progress-num=7,8 "Built target gtest"
 .PHONY : Google_tests/googletest/CMakeFiles/gtest.dir/all
 
 # Build rule for subdir invocation for target.
 Google_tests/googletest/CMakeFiles/gtest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\vahna\Documents\MyProjects\Homework\Homework\Heaps\cmake-build-debug\CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\vahna\Desktop\Heaps\Heaps\Heaps\cmake-build-debug\CMakeFiles 2
 	$(MAKE) -f CMakeFiles\Makefile2 Google_tests/googletest/CMakeFiles/gtest.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\vahna\Documents\MyProjects\Homework\Homework\Heaps\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\vahna\Desktop\Heaps\Heaps\Heaps\cmake-build-debug\CMakeFiles 0
 .PHONY : Google_tests/googletest/CMakeFiles/gtest.dir/rule
 
 # Convenience name for target.
@@ -245,14 +245,14 @@ Google_tests/googletest/CMakeFiles/gtest.dir/clean:
 Google_tests/googletest/CMakeFiles/gtest_main.dir/all: Google_tests/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) -f Google_tests\googletest\CMakeFiles\gtest_main.dir\build.make Google_tests/googletest/CMakeFiles/gtest_main.dir/depend
 	$(MAKE) -f Google_tests\googletest\CMakeFiles\gtest_main.dir\build.make Google_tests/googletest/CMakeFiles/gtest_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\vahna\Documents\MyProjects\Homework\Homework\Heaps\cmake-build-debug\CMakeFiles --progress-num=9,10 "Built target gtest_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\vahna\Desktop\Heaps\Heaps\Heaps\cmake-build-debug\CMakeFiles --progress-num=9,10 "Built target gtest_main"
 .PHONY : Google_tests/googletest/CMakeFiles/gtest_main.dir/all
 
 # Build rule for subdir invocation for target.
 Google_tests/googletest/CMakeFiles/gtest_main.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\vahna\Documents\MyProjects\Homework\Homework\Heaps\cmake-build-debug\CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\vahna\Desktop\Heaps\Heaps\Heaps\cmake-build-debug\CMakeFiles 4
 	$(MAKE) -f CMakeFiles\Makefile2 Google_tests/googletest/CMakeFiles/gtest_main.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\vahna\Documents\MyProjects\Homework\Homework\Heaps\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\vahna\Desktop\Heaps\Heaps\Heaps\cmake-build-debug\CMakeFiles 0
 .PHONY : Google_tests/googletest/CMakeFiles/gtest_main.dir/rule
 
 # Convenience name for target.

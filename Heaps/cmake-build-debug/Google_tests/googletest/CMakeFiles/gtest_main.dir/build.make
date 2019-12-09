@@ -42,10 +42,10 @@ RM = "C:\Program Files\JetBrains\CLion 2019.2.1\bin\cmake\win\bin\cmake.exe" -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\vahna\Documents\MyProjects\Homework\Homework\Heaps
+CMAKE_SOURCE_DIR = C:\Users\vahna\Desktop\Heaps\Heaps\Heaps
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\vahna\Documents\MyProjects\Homework\Homework\Heaps\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\vahna\Desktop\Heaps\Heaps\Heaps\cmake-build-debug
 
 # Include any dependencies generated for this target.
 include Google_tests/googletest/CMakeFiles/gtest_main.dir/depend.make
@@ -59,16 +59,16 @@ include Google_tests/googletest/CMakeFiles/gtest_main.dir/flags.make
 Google_tests/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj: Google_tests/googletest/CMakeFiles/gtest_main.dir/flags.make
 Google_tests/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj: Google_tests/googletest/CMakeFiles/gtest_main.dir/includes_CXX.rsp
 Google_tests/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj: ../Google_tests/googletest/src/gtest_main.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\vahna\Documents\MyProjects\Homework\Homework\Heaps\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object Google_tests/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj"
-	cd /d C:\Users\vahna\Documents\MyProjects\Homework\Homework\Heaps\cmake-build-debug\Google_tests\googletest && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\gtest_main.dir\src\gtest_main.cc.obj -c C:\Users\vahna\Documents\MyProjects\Homework\Homework\Heaps\Google_tests\googletest\src\gtest_main.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\vahna\Desktop\Heaps\Heaps\Heaps\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object Google_tests/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj"
+	cd /d C:\Users\vahna\Desktop\Heaps\Heaps\Heaps\cmake-build-debug\Google_tests\googletest && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\gtest_main.dir\src\gtest_main.cc.obj -c C:\Users\vahna\Desktop\Heaps\Heaps\Heaps\Google_tests\googletest\src\gtest_main.cc
 
 Google_tests/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gtest_main.dir/src/gtest_main.cc.i"
-	cd /d C:\Users\vahna\Documents\MyProjects\Homework\Homework\Heaps\cmake-build-debug\Google_tests\googletest && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\vahna\Documents\MyProjects\Homework\Homework\Heaps\Google_tests\googletest\src\gtest_main.cc > CMakeFiles\gtest_main.dir\src\gtest_main.cc.i
+	cd /d C:\Users\vahna\Desktop\Heaps\Heaps\Heaps\cmake-build-debug\Google_tests\googletest && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\vahna\Desktop\Heaps\Heaps\Heaps\Google_tests\googletest\src\gtest_main.cc > CMakeFiles\gtest_main.dir\src\gtest_main.cc.i
 
 Google_tests/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gtest_main.dir/src/gtest_main.cc.s"
-	cd /d C:\Users\vahna\Documents\MyProjects\Homework\Homework\Heaps\cmake-build-debug\Google_tests\googletest && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\vahna\Documents\MyProjects\Homework\Homework\Heaps\Google_tests\googletest\src\gtest_main.cc -o CMakeFiles\gtest_main.dir\src\gtest_main.cc.s
+	cd /d C:\Users\vahna\Desktop\Heaps\Heaps\Heaps\cmake-build-debug\Google_tests\googletest && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\vahna\Desktop\Heaps\Heaps\Heaps\Google_tests\googletest\src\gtest_main.cc -o CMakeFiles\gtest_main.dir\src\gtest_main.cc.s
 
 # Object files for target gtest_main
 gtest_main_OBJECTS = \
@@ -80,9 +80,9 @@ gtest_main_EXTERNAL_OBJECTS =
 lib/libgtest_maind.a: Google_tests/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj
 lib/libgtest_maind.a: Google_tests/googletest/CMakeFiles/gtest_main.dir/build.make
 lib/libgtest_maind.a: Google_tests/googletest/CMakeFiles/gtest_main.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\vahna\Documents\MyProjects\Homework\Homework\Heaps\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library ..\..\lib\libgtest_maind.a"
-	cd /d C:\Users\vahna\Documents\MyProjects\Homework\Homework\Heaps\cmake-build-debug\Google_tests\googletest && $(CMAKE_COMMAND) -P CMakeFiles\gtest_main.dir\cmake_clean_target.cmake
-	cd /d C:\Users\vahna\Documents\MyProjects\Homework\Homework\Heaps\cmake-build-debug\Google_tests\googletest && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\gtest_main.dir\link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\vahna\Desktop\Heaps\Heaps\Heaps\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library ..\..\lib\libgtest_maind.a"
+	cd /d C:\Users\vahna\Desktop\Heaps\Heaps\Heaps\cmake-build-debug\Google_tests\googletest && $(CMAKE_COMMAND) -P CMakeFiles\gtest_main.dir\cmake_clean_target.cmake
+	cd /d C:\Users\vahna\Desktop\Heaps\Heaps\Heaps\cmake-build-debug\Google_tests\googletest && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\gtest_main.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 Google_tests/googletest/CMakeFiles/gtest_main.dir/build: lib/libgtest_maind.a
@@ -90,10 +90,10 @@ Google_tests/googletest/CMakeFiles/gtest_main.dir/build: lib/libgtest_maind.a
 .PHONY : Google_tests/googletest/CMakeFiles/gtest_main.dir/build
 
 Google_tests/googletest/CMakeFiles/gtest_main.dir/clean:
-	cd /d C:\Users\vahna\Documents\MyProjects\Homework\Homework\Heaps\cmake-build-debug\Google_tests\googletest && $(CMAKE_COMMAND) -P CMakeFiles\gtest_main.dir\cmake_clean.cmake
+	cd /d C:\Users\vahna\Desktop\Heaps\Heaps\Heaps\cmake-build-debug\Google_tests\googletest && $(CMAKE_COMMAND) -P CMakeFiles\gtest_main.dir\cmake_clean.cmake
 .PHONY : Google_tests/googletest/CMakeFiles/gtest_main.dir/clean
 
 Google_tests/googletest/CMakeFiles/gtest_main.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\vahna\Documents\MyProjects\Homework\Homework\Heaps C:\Users\vahna\Documents\MyProjects\Homework\Homework\Heaps\Google_tests\googletest C:\Users\vahna\Documents\MyProjects\Homework\Homework\Heaps\cmake-build-debug C:\Users\vahna\Documents\MyProjects\Homework\Homework\Heaps\cmake-build-debug\Google_tests\googletest C:\Users\vahna\Documents\MyProjects\Homework\Homework\Heaps\cmake-build-debug\Google_tests\googletest\CMakeFiles\gtest_main.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\vahna\Desktop\Heaps\Heaps\Heaps C:\Users\vahna\Desktop\Heaps\Heaps\Heaps\Google_tests\googletest C:\Users\vahna\Desktop\Heaps\Heaps\Heaps\cmake-build-debug C:\Users\vahna\Desktop\Heaps\Heaps\Heaps\cmake-build-debug\Google_tests\googletest C:\Users\vahna\Desktop\Heaps\Heaps\Heaps\cmake-build-debug\Google_tests\googletest\CMakeFiles\gtest_main.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : Google_tests/googletest/CMakeFiles/gtest_main.dir/depend
 

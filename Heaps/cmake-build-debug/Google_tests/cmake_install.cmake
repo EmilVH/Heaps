@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/vahna/Documents/MyProjects/Homework/Homework/Heaps/Google_tests
+# Install script for directory: C:/Users/vahna/Desktop/Heaps/Heaps/Heaps/Google_tests
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,7 +34,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("C:/Users/vahna/Documents/MyProjects/Homework/Homework/Heaps/cmake-build-debug/Google_tests/googlemock/cmake_install.cmake")
+  include("C:/Users/vahna/Desktop/Heaps/Heaps/Heaps/cmake-build-debug/Google_tests/googlemock/cmake_install.cmake")
 
 endif()
 
