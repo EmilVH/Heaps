@@ -14,6 +14,12 @@ private:
 
 
 public:
+    TestHeap() = default;
+
+    TestHeap(int x) {
+        Insert(x);
+    };
+
     virtual void Insert(int key);
 
     virtual int GetMin();

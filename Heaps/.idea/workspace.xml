@@ -16,9 +16,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="95002d62-991f-4592-978c-76f84c1bddd0" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BinomialHeap.h" beforeDir="false" afterPath="$PROJECT_DIR$/BinomialHeap.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IHeap.h" beforeDir="false" afterPath="$PROJECT_DIR$/IHeap.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LeftistHeap.h" beforeDir="false" afterPath="$PROJECT_DIR$/LeftistHeap.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SkewHeap.h" beforeDir="false" afterPath="$PROJECT_DIR$/SkewHeap.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester.h" beforeDir="false" afterPath="$PROJECT_DIR$/Tester.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Heaps.dir/main.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Heaps.dir/main.cpp.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Heaps.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Heaps.dir/objects.a" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Heaps.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Heaps.exe" afterDir="false" />
@@ -121,7 +123,7 @@
       <workItem from="1575835171956" duration="8530000" />
       <workItem from="1575874420304" duration="6312000" />
       <workItem from="1575891557036" duration="761000" />
-      <workItem from="1575892401362" duration="578000" />
+      <workItem from="1575892401362" duration="2319000" />
     </task>
     <task id="LOCAL-00001" summary="Initial">
       <created>1575834658239</created>
@@ -165,7 +167,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575892487956</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Deleted key=-1000">
+      <created>1575892997782</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1575892997782</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -190,6 +199,7 @@
     <MESSAGE value="Initial" />
     <MESSAGE value="Added Testing" />
     <MESSAGE value="Added gitignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added gitignore" />
+    <MESSAGE value="Deleted key=-1000" />
+    <option name="LAST_COMMIT_MESSAGE" value="Deleted key=-1000" />
   </component>
 </project>

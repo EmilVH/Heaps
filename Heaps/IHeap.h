@@ -12,6 +12,10 @@ struct IHeap {
 
 public:
     //Добавить конструктор от одного элемента
+    IHeap() = default;
+    /*IHeap(int x){
+        Insert(x);
+    }*/
     virtual void Insert(int key) = 0;
 
     virtual int GetMin() = 0;

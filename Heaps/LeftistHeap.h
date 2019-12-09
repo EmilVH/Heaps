@@ -31,6 +31,10 @@ private:
 public:
     LeftistHeap() = default;
 
+    LeftistHeap(int x) {
+        Insert(x);
+    };
+
     LeftistHeap(Vertex_ *x) {
         head_ = x;
     }

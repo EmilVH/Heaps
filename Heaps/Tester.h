@@ -16,28 +16,32 @@
 void tester(std::vector<IHeap *> tested, std::vector<IHeap *> standard, int key, int count) {
     srand(key);
     int exist = tested.size();
+    enum {
+        Insert, GetMin, ExtractMin, Merge
+    };
     for (int i = 0; i < count; i++) {
         if (exist == 0) {
             break;
         }
         int x = rand();
         int y = rand() % exist;
-        if (x % 4 == 0) {
+        if (x % 4 == Insert) {
             int value = rand();
             tested[y]->Insert(value);
-            standard[y]->Insert(value);
+            standard[y]->Insert(value);//Завести enum
         }
-        if (x % 4 == 1) {
+
+        if (x % 4 == GetMin) {
             if (standard[y]->size() > 0) {
                 ASSERT_EQ(tested[y]->GetMin(), standard[y]->GetMin());
             }
         }
-        if (x % 4 == 2) {
+        if (x % 4 == ExtractMin) {
             if (standard[y]->size() > 0) {
                 ASSERT_EQ(tested[y]->ExtractMin(), standard[y]->ExtractMin());
             }
         }
-        if (x % 4 == 3) {
+        if (x % 4 == Merge) {
             if (y != exist - 1) {
                 tested[y]->Merge(*tested[exist - 1]);//Тут может быть ошибка
                 standard[y]->Merge(*standard[exist - 1]);
@@ -60,18 +64,21 @@ void create_test_vector(std::vector<IHeap *> &a) {
     }
 }
 
+enum {
+    BinomialHeapKey, SkewHeapKey, LeftistHeapKey
+};
 
 class TesterHeap : public ::testing::Test {
 protected:
     IHeap *getHeap_(int x) {
         IHeap *ans;
-        if (x == 1) {
+        if (x == BinomialHeapKey) {
             ans = new BinomialHeap;
         }
-        if (x == 2) {
+        if (x == SkewHeapKey) {
             ans = new SkewHeap;
         }
-        if (x == 3) {
+        if (x == LeftistHeapKey) {
             ans = new LeftistHeap;
         }
         return ans;
@@ -157,26 +164,31 @@ protected:
 */
 TEST_F (TesterHeap,
         BinomialHeap) {
-    SetUp(1);
+    SetUp(BinomialHeapKey);
     tester(all, standard, 345, 1000000);
 
 }
 
 TEST_F (TesterHeap,
         SkewHeap) {
-    SetUp(2);
+    SetUp(SkewHeapKey);
     tester(all, standard, 345, 1000000);
 }
 
 TEST_F (TesterHeap,
         LeftistHeap) {
-    SetUp(3);
+    SetUp(LeftistHeapKey);
     tester(all, standard, 345, 1000000);
 }
 
+/*TEST(construtor,first){
+    SkewHeap x(5);
+    EXPECT_EQ(5,x.ExtractMin());
 
+}*/
 int test() {
     ::testing::InitGoogleTest();
+
     return RUN_ALL_TESTS();
 }
 

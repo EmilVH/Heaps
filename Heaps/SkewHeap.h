@@ -27,6 +27,10 @@ protected:
 public:
     SkewHeap() = default;
 
+    SkewHeap(int x) {
+        Insert(x);
+    };
+
     SkewHeap(Vertex_ *x) {
         head_ = x;
     }
