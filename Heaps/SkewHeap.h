@@ -11,23 +11,23 @@ struct SkewHeap : public IHeap {
 protected:
 
     int size_ = 0;
-    struct Vertex {
+    struct Vertex_ {
     public:
-        Vertex *r = nullptr;
-        Vertex *l = nullptr;
+        Vertex_ *r = nullptr;
+        Vertex_ *l = nullptr;
         int key = -1000;
     };
 
-    void destruct_(Vertex *x);
+    void destruct_(Vertex_ *x);
 
-    Vertex *MergeRoots(Vertex *r1, Vertex *r2);
+    Vertex_ *MergeRoots_(Vertex_ *r1, Vertex_ *r2);
 
-    Vertex *head_ = nullptr;
+    Vertex_ *head_ = nullptr;
 
 public:
     SkewHeap() = default;
 
-    SkewHeap(Vertex *x) {
+    SkewHeap(Vertex_ *x) {
         head_ = x;
     }
 
@@ -48,7 +48,7 @@ public:
 
 void SkewHeap::Insert(int key) {
     SkewHeap tmp;
-    tmp.head_ = new Vertex;
+    tmp.head_ = new Vertex_;
     tmp.head_->key = key;
     tmp.size_++;
     Merge(tmp);
@@ -60,7 +60,7 @@ int SkewHeap::GetMin() {
 
 int SkewHeap::ExtractMin() {
     int res = head_->key;
-    Vertex *del = head_;
+    Vertex_ *del = head_;
     SkewHeap R(head_->r);
     head_ = head_->l;
     size_--;
@@ -70,7 +70,7 @@ int SkewHeap::ExtractMin() {
 }
 
 
-void SkewHeap::destruct_(SkewHeap::Vertex *x) {
+void SkewHeap::destruct_(SkewHeap::Vertex_ *x) {
     if (x == nullptr) {
         return;
     }
@@ -87,12 +87,12 @@ int SkewHeap::size() {
 
 void SkewHeap::Merge(IHeap &x) {
     SkewHeap &a = dynamic_cast<SkewHeap &>(x);
-    head_ = MergeRoots(head_, a.head_);
+    head_ = MergeRoots_(head_, a.head_);
     size_ += a.size_;
     a.head_ = nullptr;
 }
 
-SkewHeap::Vertex *SkewHeap::MergeRoots(SkewHeap::Vertex *r1, SkewHeap::Vertex *r2) {
+SkewHeap::Vertex_ *SkewHeap::MergeRoots_(SkewHeap::Vertex_ *r1, SkewHeap::Vertex_ *r2) {
     if (r1 == nullptr) {
         return r2;
     }
@@ -102,7 +102,7 @@ SkewHeap::Vertex *SkewHeap::MergeRoots(SkewHeap::Vertex *r1, SkewHeap::Vertex *r
     if (r1->key >= r2->key) {
         std::swap(r1, r2);
     }
-    r1->r = MergeRoots(r1->r, r2);
+    r1->r = MergeRoots_(r1->r, r2);
     std::swap(r1->l, r1->r);
     return r1;
 }

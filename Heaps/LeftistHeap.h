@@ -10,28 +10,28 @@
 struct LeftistHeap : public IHeap {
 protected:
     int size_ = 0;
-    struct Vertex {
+    struct Vertex_ {
     public:
-        Vertex *r = nullptr;
-        Vertex *l = nullptr;
+        Vertex_ *r = nullptr;
+        Vertex_ *l = nullptr;
         int key = -1000;
         int rank = 1;
     };
 
-    void destruct_(Vertex *x);
+    void destruct_(Vertex_ *x);
 
-    Vertex *Merge_Roots(Vertex *r1, Vertex *r2);
+    Vertex_ *MergeRoots_(Vertex_ *r1, Vertex_ *r2);
 
-    Vertex *head_ = nullptr;
+    Vertex_ *head_ = nullptr;
 
 
 private:
-    int dist_(Vertex *x);
+    int dist_(Vertex_ *x);
 
 public:
     LeftistHeap() = default;
 
-    LeftistHeap(Vertex *x) {
+    LeftistHeap(Vertex_ *x) {
         head_ = x;
     }
 
@@ -52,7 +52,7 @@ public:
 
 void LeftistHeap::Insert(int key) {
     LeftistHeap tmp;
-    tmp.head_ = new Vertex;
+    tmp.head_ = new Vertex_;
     tmp.head_->key = key;
     tmp.size_++;
     Merge(tmp);
@@ -64,7 +64,7 @@ int LeftistHeap::GetMin() {
 
 int LeftistHeap::ExtractMin() {
     int res = head_->key;
-    Vertex *del = head_;
+    Vertex_ *del = head_;
     LeftistHeap R(head_->r);
     head_ = head_->l;
     size_--;
@@ -75,13 +75,13 @@ int LeftistHeap::ExtractMin() {
 
 void LeftistHeap::Merge(IHeap &x) {
     LeftistHeap &a = dynamic_cast<LeftistHeap &>(x);
-    head_ = Merge_Roots(head_, a.head_);
-    size_+=a.size_;
+    head_ = MergeRoots_(head_, a.head_);
+    size_ += a.size_;
     a.head_ = nullptr;
 }
 
 
-void LeftistHeap::destruct_(LeftistHeap::Vertex *x) {
+void LeftistHeap::destruct_(LeftistHeap::Vertex_ *x) {
     if (x == nullptr) {
         return;
     }
@@ -90,7 +90,7 @@ void LeftistHeap::destruct_(LeftistHeap::Vertex *x) {
     delete x;
 }
 
-LeftistHeap::Vertex *LeftistHeap::Merge_Roots(LeftistHeap::Vertex *r1, LeftistHeap::Vertex *r2) {
+LeftistHeap::Vertex_ *LeftistHeap::MergeRoots_(LeftistHeap::Vertex_ *r1, LeftistHeap::Vertex_ *r2) {
     if (r1 == nullptr) {
         return r2;
     }
@@ -100,7 +100,7 @@ LeftistHeap::Vertex *LeftistHeap::Merge_Roots(LeftistHeap::Vertex *r1, LeftistHe
     if (r2->key < r1->key) {
         std::swap(r1, r2);
     }
-    r1->r = Merge_Roots(r1->r, r2);
+    r1->r = MergeRoots_(r1->r, r2);
     /*if (r1->r != nullptr && r1->l != nullptr) {
         r1->rank = std::min(r1->l->rank, r1->r->rank) + 1;
         if (r1->l->rank < r1->r->rank) {
@@ -123,7 +123,7 @@ int LeftistHeap::size() {
     return size_;
 }
 
-int LeftistHeap::dist_(LeftistHeap::Vertex *x) {
+int LeftistHeap::dist_(LeftistHeap::Vertex_ *x) {
     if (x == nullptr) {
         return 0;
     } else {

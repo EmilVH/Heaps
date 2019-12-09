@@ -60,9 +60,10 @@ void create_test_vector(std::vector<IHeap *> &a) {
     }
 }
 
+
 class TesterHeap : public ::testing::Test {
 protected:
-    IHeap *getHeap(int x) {
+    IHeap *getHeap_(int x) {
         IHeap *ans;
         if (x == 1) {
             ans = new BinomialHeap;
@@ -79,7 +80,7 @@ protected:
     virtual void SetUp(int x) {
         all.resize(5000);
         for (int i = 0; i < 5000; i++) {
-            all[i] = getHeap(x);
+            all[i] = getHeap_(x);
         }
         create_test_vector(standard);
     }

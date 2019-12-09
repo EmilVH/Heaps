@@ -10,7 +10,7 @@
 
 struct TestHeap : public IHeap {
 private:
-    std::multiset<int> all;
+    std::multiset<int> all_;
 
 
 public:
@@ -26,27 +26,27 @@ public:
 };
 
 void TestHeap::Insert(int key) {
-    all.insert(key);
+    all_.insert(key);
 }
 
 int TestHeap::GetMin() {
-    return *all.begin();
+    return *all_.begin();
 }
 
 int TestHeap::ExtractMin() {
-    int min = *all.begin();
-    all.erase(all.begin());
+    int min = *all_.begin();
+    all_.erase(all_.begin());
     return min;
 }
 
 void TestHeap::Merge(IHeap &x) {
     TestHeap &a = dynamic_cast<TestHeap &>(x);
-    all.insert(a.all.begin(), a.all.end());
+    all_.insert(a.all_.begin(), a.all_.end());
 
 }
 
 int TestHeap::size() {
-    return all.size();
+    return all_.size();
 }
 
 #endif //HEAPS_12_2019__TESTHEAP_H

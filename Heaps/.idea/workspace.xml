@@ -17,6 +17,9 @@
   <component name="ChangeListManager">
     <list default="true" id="95002d62-991f-4592-978c-76f84c1bddd0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LeftistHeap.h" beforeDir="false" afterPath="$PROJECT_DIR$/LeftistHeap.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SkewHeap.h" beforeDir="false" afterPath="$PROJECT_DIR$/SkewHeap.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestHeap.h" beforeDir="false" afterPath="$PROJECT_DIR$/TestHeap.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tester.h" beforeDir="false" afterPath="$PROJECT_DIR$/Tester.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Heaps.dir/main.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Heaps.dir/main.cpp.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Heaps.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Heaps.dir/objects.a" afterDir="false" />
@@ -69,8 +72,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="CMake Application.Heaps">
-    <configuration name="TestBionomialHeap.BinomialHeap" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Heaps" TARGET_NAME="Heaps" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Heaps" RUN_TARGET_NAME="Heaps" TEST_CLASS="TestBionomialHeap" TEST_METHOD="BinomialHeap" TEST_MODE="SUITE_TEST">
+  <component name="RunManager" selected="Google Test.All in Heaps">
+    <configuration name="All in Heaps" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" nameIsGenerated="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Heaps" TARGET_NAME="Heaps" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Heaps" RUN_TARGET_NAME="Heaps" TEST_MODE="SUITE_TEST">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
         <option name="BeforeTestRunTask" enabled="true" />
@@ -107,13 +110,8 @@
       <item itemvalue="CMake Application.gmock_main" />
       <item itemvalue="CMake Application.gtest" />
       <item itemvalue="CMake Application.gtest_main" />
-      <item itemvalue="Google Test.TestBionomialHeap.BinomialHeap" />
+      <item itemvalue="Google Test.All in Heaps" />
     </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Google Test.TestBionomialHeap.BinomialHeap" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -127,7 +125,7 @@
       <updated>1575822489523</updated>
       <workItem from="1575822490687" duration="5991000" />
       <workItem from="1575835171956" duration="8530000" />
-      <workItem from="1575874420304" duration="2789000" />
+      <workItem from="1575874420304" duration="6312000" />
     </task>
     <task id="LOCAL-00001" summary="Initial">
       <created>1575834658239</created>
